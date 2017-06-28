@@ -1,0 +1,26 @@
+[
+  {
+    "_id": "595217dc0ea6482027dcc96e",
+    "_type": "block",
+    "_parentId": "595217dc0ea6482027dcc96d",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_trackingId": 1,
+    "_classes": "",
+    "body": "",
+    "displayTitle": "",
+    "title": "Block title"
+  },
+  {
+    "_id": "595252fc0ea6482027dcc989",
+    "_type": "block",
+    "_parentId": "595217dc0ea6482027dcc96d",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_trackingId": 2,
+    "_classes": "",
+    "body": "",
+    "displayTitle": "New Interactive Map components",
+    "title": "New Interactive Map components"
+  }
+]

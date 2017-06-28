@@ -1,0 +1,35 @@
+{
+  "_defaultLanguage": "en",
+  "_defaultDirection": "ltr",
+  "_questionWeight": 1,
+  "_generateSourcemap": true,
+  "_forceRouteLocking": true,
+  "__v": 0,
+  "_courseId": "595217d90ea6482027dcc969",
+  "_drawer": {
+    "_showEasing": "easeOutQuart",
+    "_hideEasing": "easeInQuart",
+    "_duration": 400
+  },
+  "_accessibility": {
+    "_isTextProcessorEnabled": false,
+    "_shouldSupportLegacyBrowsers": true,
+    "_isDisabledOnTouchDevices": false,
+    "_isEnabled": false
+  },
+  "screenSize": {
+    "small": 519,
+    "medium": 759,
+    "large": 1024
+  },
+  "_id": "595217d90ea6482027dcc96b",
+  "build": {
+    "includes": [
+      "adapt-contrib-vanilla",
+      "adapt-contrib-boxMenu",
+      "adapt-contrib-pageLevelProgress",
+      "adaptInteractiveMapPlaces",
+      "adapt-contrib-text"
+    ]
+  }
+}

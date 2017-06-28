@@ -1,0 +1,24 @@
+[
+  {
+    "_id": "595217dc0ea6482027dcc96c",
+    "_type": "page",
+    "_parentId": "course",
+    "_graphic": {
+      "alt": "",
+      "src": ""
+    },
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_lockedBy": [],
+    "duration": "",
+    "linkText": "View",
+    "_classes": "",
+    "body": "<p>Easily&nbsp;add an interactive map with clickable markers for places, showing more information to the student.</p>",
+    "displayTitle": "Interactive Map - Places",
+    "title": "Interactive Map - Places",
+    "_pageLevelProgress": {
+      "_isEnabled": true,
+      "_showPageCompletion": true
+    }
+  }
+]

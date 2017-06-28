@@ -1,0 +1,86 @@
+[
+  {
+    "_id": "595217f60ea6482027dcc96f",
+    "_layout": "left",
+    "_type": "component",
+    "_parentId": "595217dc0ea6482027dcc96e",
+    "body": "<p>Most viewed places in Rome.</p>",
+    "displayTitle": "Tourist places in Italy",
+    "title": "Tourist places in Italy",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_classes": "",
+    "_component": "adaptInteractiveMapPlaces",
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    },
+    "apiKey": "AIzaSyAEtmPk-OmOZIElsI76JxNZhMRH8RqnwmA",
+    "language": "en",
+    "uniqueName": "Map-1",
+    "mapHeight": 30,
+    "enableCompletionOnClick": true,
+    "_items": [
+      {
+        "address": "Colosseo, Rome, Italy",
+        "title": "Colosseo",
+        "content": "<p>This is your extra information for Colosseo</p>",
+        "picture": "course/en/assets/b0c2b1c239e46f8e30d6971b6d683f36f6695b68.jpg",
+        "extreference": "https://en.wikipedia.org/wiki/Colosseum"
+      },
+      {
+        "address": "Fontana di Trevi, Rome, Italy",
+        "title": "Fontana di Trevi",
+        "content": "<p>This is your extra information for Fontana di Trevi.</p><p>This is a basic example, click on Colosseo marker to&nbsp;see a more complex one.</p>",
+        "picture": "",
+        "extreference": ""
+      }
+    ]
+  },
+  {
+    "_id": "595218950ea6482027dcc971",
+    "_layout": "right",
+    "_type": "component",
+    "_parentId": "595217dc0ea6482027dcc96e",
+    "body": "<p>Most viewed places in Paris</p>",
+    "displayTitle": "Tourist places in France",
+    "title": "Tourist places in France",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_classes": "",
+    "_component": "adaptInteractiveMapPlaces",
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    },
+    "apiKey": "AIzaSyAEtmPk-OmOZIElsI76JxNZhMRH8RqnwmA",
+    "language": "en",
+    "uniqueName": "Map-2",
+    "mapHeight": 30,
+    "enableCompletionOnClick": true,
+    "_items": [
+      {
+        "address": "Tour Eiffel, Paris, France",
+        "title": "Tour Eiffel",
+        "content": "<p>This is your extra information for Tour Eiffel.</p><p>This is a basic example, click on Colosseo marker to&nbsp;see a more complex one.</p>",
+        "picture": "",
+        "extreference": ""
+      }
+    ]
+  },
+  {
+    "_id": "595253040ea6482027dcc98a",
+    "_layout": "full",
+    "_type": "component",
+    "_parentId": "595252fc0ea6482027dcc989",
+    "body": "<p>If you like the &quot;Adapt Interactive Map - Places&quot; component, and you would like to use other kind of interactive maps on your course, please consider to support the development of new components.&nbsp;</p><p>If you are interested, I&#39;m available for hire to develop custom map&nbsp;based components for Adapt courses.</p><p>You can contact me by:</p><ul><li>LinkedIn:&nbsp;<a href=\"https://it.linkedin.com/in/fabio-beoni-6a7848101\" target=\"_blank\">https://it.linkedin.com/in/fabio-beoni-6a7848101</a></li><li>Email: reg@beoni.net</li></ul>",
+    "displayTitle": "",
+    "title": "Component title",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_classes": "",
+    "_component": "text",
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    },
+    "instruction": ""
+  }
+]

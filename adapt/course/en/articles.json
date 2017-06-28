@@ -1,0 +1,13 @@
+[
+  {
+    "_id": "595217dc0ea6482027dcc96d",
+    "_type": "article",
+    "_parentId": "595217dc0ea6482027dcc96c",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_classes": "",
+    "body": "<p>With the&nbsp;&quot;Interactive Map - Places&quot; component is easy to add an interactive map to your AdaptLearning course.</p><p>You can have:</p><ol><li><strong>multiple maps</strong> on the same page</li><li>each map can have <strong>marker&nbsp;icons to identify places</strong> on the map</li><li>marker places are <strong>clickable and can display additional information</strong> to the student (text, image, link to resource)</li><li>each map can also display a title and a description text</li><li>component completion can depend on visualization of all places&nbsp;</li></ol><p>Add a new place to the map is pretty easy, all you need to know is the address (or &quot;famous name&quot;) of the place you want to display.</p><p>Note: to work with Google Maps you must request a free key for your website/course to this address:&nbsp;<a href=\"https://developers.google.com/maps/documentation/javascript/get-api-key\" target=\"_blank\">https://developers.google.com/maps/documentation/javascript/get-api-key</a>&nbsp;. Please also check Google Maps Terms of Service.</p>",
+    "displayTitle": "Example of usage of the map with clickable marker places",
+    "title": "Example of usage of the map with clickable marker places"
+  }
+]
