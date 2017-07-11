@@ -1,3 +1,7 @@
+/**
+ * Utility to generate GUID codes.
+ * @author Fabio Beoni: https://github.com/fabiobeoni | https://it.linkedin.com/in/fabio-beoni-6a7848101
+ */
 define(function () {
     return {
         s4:function() {

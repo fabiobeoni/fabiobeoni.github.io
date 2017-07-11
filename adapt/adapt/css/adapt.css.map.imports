@@ -5,9 +5,15 @@
 @import 'src/core/less/base.less';
 @import 'src/core/less/legacy.less';
 @import 'src/core/less/reset.less';
+@import 'src/components/adapt-contrib-media/less/media.less';
+@import 'src/components/adapt-contrib-media/less/mep.less';
 @import 'src/components/adapt-contrib-text/less/text.less';
 @import 'src/components/adaptInteractiveMapPlaces/less/adaptInteractiveMapPlaces.less';
+@import 'src/extensions/adapt-contrib-drawerPageNavigation/less/resources.less';
+@import 'src/extensions/adapt-contrib-languagePicker/less/languagePicker.less';
 @import 'src/extensions/adapt-contrib-pageLevelProgress/less/pageLevelProgress.less';
+@import 'src/extensions/adapt-contrib-resources/less/resources.less';
+@import 'src/extensions/adapt-notes/less/notes.less';
 @import 'src/menu/adapt-contrib-boxMenu/less/boxmenu.less';
 @import 'src/theme/adapt-contrib-vanilla/less/colors.less';
 @import 'src/theme/adapt-contrib-vanilla/less/fonts.less';

@@ -24,12 +24,12 @@
         "address": "Colosseo, Rome, Italy",
         "title": "Colosseo",
         "content": "<p>This is your extra information for Colosseo</p>",
-        "picture": "course/en/assets/b0c2b1c239e46f8e30d6971b6d683f36f6695b68.jpg",
+        "picture": "course/en/assets/e6c2bb90ea1d1618a29aef7f8343bcfffa759db3.jpg",
         "extreference": "https://en.wikipedia.org/wiki/Colosseum"
       },
       {
         "address": "Fontana di Trevi, Rome, Italy",
-        "title": "Fontana di Trevi",
+        "title": "Fontana di Trevi.",
         "content": "<p>This is your extra information for Fontana di Trevi.</p><p>This is a basic example, click on Colosseo marker to&nbsp;see a more complex one.</p>",
         "picture": "",
         "extreference": ""
@@ -82,5 +82,47 @@
       "_isEnabled": true
     },
     "instruction": ""
+  },
+  {
+    "_id": "5959eab7199d3f491688e466",
+    "_layout": "full",
+    "_type": "component",
+    "_parentId": "5958c59d4add5b481c22668b",
+    "body": "",
+    "displayTitle": "Component title",
+    "title": "Component title",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_classes": "",
+    "_component": "media",
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    },
+    "instruction": "",
+    "_media": {
+      "mp4": "course/en/assets/438ad3bf24fed937085ffa101ed06cdb23e30007.mp4",
+      "ogv": "",
+      "webm": "",
+      "mp3": "",
+      "source": "",
+      "type": "",
+      "poster": "",
+      "cc": []
+    },
+    "_setCompletionOn": "ended",
+    "_useClosedCaptions": false,
+    "_startLanguage": "en",
+    "_allowFullScreen": false,
+    "_playsinline": false,
+    "_transcript": {
+      "_setCompletionOnView": true,
+      "_inlineTranscript": false,
+      "_externalTranscript": false,
+      "inlineTranscriptButton": "",
+      "inlineTranscriptCloseButton": "",
+      "inlineTranscriptBody": "",
+      "transcriptLinkButton": "",
+      "transcriptLink": ""
+    }
   }
 ]

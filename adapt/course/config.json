@@ -23,13 +23,37 @@
     "large": 1024
   },
   "_id": "595217d90ea6482027dcc96b",
+  "_languagePicker": {
+    "_isEnabled": false,
+    "title": "",
+    "displayTitle": "",
+    "body": "",
+    "_showOnCourseLoad": false,
+    "_languagePickerIconClass": "icon-language-2",
+    "_classes": "",
+    "_languages": [],
+    "_accessibility": {
+      "accessibilityToggleTextOn": "Turn accessibility on?",
+      "accessibilityToggleTextOff": "Turn accessibility off?",
+      "_accessibilityInstructions": {
+        "touch": "Usage instructions. Use swipe right for next. Use swipe left for previous. Use a double tap to select. Use a two finger slide up to go to the top of the page.",
+        "notouch": "Usage instructions. Use tab for next. Use shift tab for previous. Use enter to select. Use escape to go to the top of the page.",
+        "ipad": "Usage instructions for touchscreens. Use swipe right for next. Use swipe left for previous. Use a double tap to select. Use a two finger slide up to go to the top of the page. Usage instructions for keyboard access. Use right for next. Use left for previous. Use up and down together to select."
+      }
+    }
+  },
   "build": {
     "includes": [
       "adapt-contrib-vanilla",
       "adapt-contrib-boxMenu",
+      "adapt-notes",
+      "adapt-contrib-languagePicker",
+      "adapt-contrib-resources",
       "adapt-contrib-pageLevelProgress",
+      "adapt-contrib-drawerPageNavigation",
       "adaptInteractiveMapPlaces",
-      "adapt-contrib-text"
+      "adapt-contrib-text",
+      "adapt-contrib-media"
     ]
   }
 }
