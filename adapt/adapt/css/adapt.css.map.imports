@@ -5,8 +5,7 @@
 @import 'src/core/less/base.less';
 @import 'src/core/less/legacy.less';
 @import 'src/core/less/reset.less';
-@import 'src/components/adapt-contrib-media/less/media.less';
-@import 'src/components/adapt-contrib-media/less/mep.less';
+@import 'src/components/adapt-contrib-blank/less/blank.less';
 @import 'src/components/adapt-contrib-text/less/text.less';
 @import 'src/components/adaptInteractiveMapPlaces/less/adaptInteractiveMapPlaces.less';
 @import 'src/extensions/adapt-contrib-drawerPageNavigation/less/resources.less';

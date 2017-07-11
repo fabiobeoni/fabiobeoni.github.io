@@ -52,8 +52,7 @@
       "adapt-contrib-pageLevelProgress",
       "adapt-contrib-drawerPageNavigation",
       "adaptInteractiveMapPlaces",
-      "adapt-contrib-text",
-      "adapt-contrib-media"
+      "adapt-contrib-text"
     ]
   }
 }

@@ -96,7 +96,7 @@
     "remainingAttemptText": "final attempt",
     "disabledAriaLabel": "This button is disabled at the moment"
   },
-  "_latestTrackingId": 3,
+  "_latestTrackingId": 2,
   "body": "<p><strong>This short course is a demo to see how Adapt Interactive Maps components work.</strong></p><p>Today only one interactive map component is available, soon new kind of interactive maps will be ready.</p>",
   "displayTitle": "Adapt Interactive Maps",
   "title": "Adapt Interactive Maps",
@@ -147,7 +147,7 @@
     "title": "Notes",
     "description": "Take your notes on course",
     "browserWarn": "Notes are available only for modern browsers. Please update your browser.",
-    "fileReadError": "Error reading the file.",
-    "validationWarn": "Please fill the form."
+    "fileReadError": "Error reading the file",
+    "validationWarn": "Please fill the form"
   }
 }

@@ -22,17 +22,5 @@
     "body": "",
     "displayTitle": "New Interactive Map components",
     "title": "New Interactive Map components"
-  },
-  {
-    "_id": "5958c59d4add5b481c22668b",
-    "_type": "block",
-    "_parentId": "595217dc0ea6482027dcc96d",
-    "_isAvailable": true,
-    "_isOptional": false,
-    "_trackingId": 3,
-    "_classes": "",
-    "body": "",
-    "displayTitle": "Block title",
-    "title": "Block title"
   }
 ]

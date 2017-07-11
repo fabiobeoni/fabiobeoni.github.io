@@ -82,47 +82,5 @@
       "_isEnabled": true
     },
     "instruction": ""
-  },
-  {
-    "_id": "5959eab7199d3f491688e466",
-    "_layout": "full",
-    "_type": "component",
-    "_parentId": "5958c59d4add5b481c22668b",
-    "body": "",
-    "displayTitle": "Component title",
-    "title": "Component title",
-    "_isAvailable": true,
-    "_isOptional": false,
-    "_classes": "",
-    "_component": "media",
-    "_pageLevelProgress": {
-      "_isEnabled": true
-    },
-    "instruction": "",
-    "_media": {
-      "mp4": "course/en/assets/438ad3bf24fed937085ffa101ed06cdb23e30007.mp4",
-      "ogv": "",
-      "webm": "",
-      "mp3": "",
-      "source": "",
-      "type": "",
-      "poster": "",
-      "cc": []
-    },
-    "_setCompletionOn": "ended",
-    "_useClosedCaptions": false,
-    "_startLanguage": "en",
-    "_allowFullScreen": false,
-    "_playsinline": false,
-    "_transcript": {
-      "_setCompletionOnView": true,
-      "_inlineTranscript": false,
-      "_externalTranscript": false,
-      "inlineTranscriptButton": "",
-      "inlineTranscriptCloseButton": "",
-      "inlineTranscriptBody": "",
-      "transcriptLinkButton": "",
-      "transcriptLink": ""
-    }
   }
 ]
