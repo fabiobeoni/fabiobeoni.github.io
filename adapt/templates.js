@@ -370,157 +370,9 @@ this["Handlebars"]["templates"]["shadow"] = Handlebars.template({"compiler":[7,"
     return "<div id=\"shadow\" class=\"shadow display-none\"></div>";
 },"useData":true});
 
-this["Handlebars"]["templates"]["media"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
-    var stack1;
-
-  return container.escapeExpression(container.lambda(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0._globals : depth0)) != null ? stack1._components : stack1)) != null ? stack1._media : stack1)) != null ? stack1.transcriptButton : stack1), depth0));
-},"3":function(container,depth0,helpers,partials,data) {
-    return "tabindex=\"0\"";
-},"5":function(container,depth0,helpers,partials,data) {
-    var stack1;
-
-  return "      <audio src=\""
-    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0._media : depth0)) != null ? stack1.mp3 : stack1), depth0))
-    + "\" type=\"audio/mp3\" style=\"width: 100%; height: 100%;\"/>\n";
-},"7":function(container,depth0,helpers,partials,data) {
-    var stack1;
-
-  return ((stack1 = helpers["if"].call(depth0 != null ? depth0 : (container.nullContext || {}),((stack1 = (depth0 != null ? depth0._media : depth0)) != null ? stack1.ogg : stack1),{"name":"if","hash":{},"fn":container.program(8, data, 0),"inverse":container.program(10, data, 0),"data":data})) != null ? stack1 : "");
-},"8":function(container,depth0,helpers,partials,data) {
-    var stack1;
-
-  return "        <audio src=\""
-    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0._media : depth0)) != null ? stack1.ogg : stack1), depth0))
-    + "\" type=\"audio/ogg\" style=\"width: 100%; height: 100%;\"/>\n";
-},"10":function(container,depth0,helpers,partials,data) {
-    var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {});
-
-  return "        <video preload=\"none\" width=\"640\" height=\"360\" "
-    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0._playsinline : depth0),{"name":"if","hash":{},"fn":container.program(11, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + " "
-    + ((stack1 = (helpers.if_value_equals || (depth0 && depth0.if_value_equals) || helpers.helperMissing).call(alias1,((stack1 = (depth0 != null ? depth0._media : depth0)) != null ? stack1.type : stack1),"video/vimeo",{"name":"if_value_equals","hash":{},"fn":container.program(13, data, 0),"inverse":container.program(15, data, 0),"data":data})) != null ? stack1 : "")
-    + " style=\"width:100%; height:100%;\" controls=\"controls\">\n"
-    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0._media : depth0)) != null ? stack1.source : stack1),{"name":"if","hash":{},"fn":container.program(17, data, 0),"inverse":container.program(19, data, 0),"data":data})) != null ? stack1 : "")
-    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0._useClosedCaptions : depth0),{"name":"if","hash":{},"fn":container.program(26, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "        </video>\n";
-},"11":function(container,depth0,helpers,partials,data) {
-    return "playsinline";
-},"13":function(container,depth0,helpers,partials,data) {
-    return "";
-},"15":function(container,depth0,helpers,partials,data) {
-    var stack1;
-
-  return "poster=\""
-    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0._media : depth0)) != null ? stack1.poster : stack1), depth0))
-    + "\"";
-},"17":function(container,depth0,helpers,partials,data) {
-    var stack1, alias1=container.lambda, alias2=container.escapeExpression;
-
-  return "            <source src=\""
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0._media : depth0)) != null ? stack1.source : stack1), depth0))
-    + "\" type=\""
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0._media : depth0)) != null ? stack1.type : stack1), depth0))
-    + "\"/>\n";
-},"19":function(container,depth0,helpers,partials,data) {
-    var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {});
-
-  return ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0._media : depth0)) != null ? stack1.mp4 : stack1),{"name":"if","hash":{},"fn":container.program(20, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0._media : depth0)) != null ? stack1.ogv : stack1),{"name":"if","hash":{},"fn":container.program(22, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0._media : depth0)) != null ? stack1.webm : stack1),{"name":"if","hash":{},"fn":container.program(24, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
-},"20":function(container,depth0,helpers,partials,data) {
-    var stack1;
-
-  return "              <source src=\""
-    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0._media : depth0)) != null ? stack1.mp4 : stack1), depth0))
-    + "\" type=\"video/mp4\"/>\n";
-},"22":function(container,depth0,helpers,partials,data) {
-    var stack1;
-
-  return "              <source src=\""
-    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0._media : depth0)) != null ? stack1.ogv : stack1), depth0))
-    + "\" type=\"video/ogg\"/>\n";
-},"24":function(container,depth0,helpers,partials,data) {
-    var stack1;
-
-  return "              <source src=\""
-    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0._media : depth0)) != null ? stack1.webm : stack1), depth0))
-    + "\" type=\"video/webm\"/>\n";
-},"26":function(container,depth0,helpers,partials,data) {
-    var stack1;
-
-  return ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),((stack1 = (depth0 != null ? depth0._media : depth0)) != null ? stack1.cc : stack1),{"name":"each","hash":{},"fn":container.program(27, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
-},"27":function(container,depth0,helpers,partials,data) {
-    var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
-
-  return "                  <track kind=\"subtitles\" src=\""
-    + alias4(((helper = (helper = helpers.src || (depth0 != null ? depth0.src : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"src","hash":{},"data":data}) : helper)))
-    + "\" type=\"text/vtt\" srclang=\""
-    + alias4(((helper = (helper = helpers.srclang || (depth0 != null ? depth0.srclang : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"srclang","hash":{},"data":data}) : helper)))
-    + "\" />\n";
-},"29":function(container,depth0,helpers,partials,data) {
-    var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {});
-
-  return "    <div class=\"media-transcript-container\">\n\n      <div class=\"media-transcript-button-container\">\n"
-    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0._transcript : depth0)) != null ? stack1._inlineTranscript : stack1),{"name":"if","hash":{},"fn":container.program(30, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0._transcript : depth0)) != null ? stack1._externalTranscript : stack1),{"name":"if","hash":{},"fn":container.program(35, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "        </div>\n\n"
-    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0._transcript : depth0)) != null ? stack1._inlineTranscript : stack1),{"name":"if","hash":{},"fn":container.program(38, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "\n    </div>\n";
-},"30":function(container,depth0,helpers,partials,data) {
-    var stack1;
-
-  return "          <button class=\"media-inline-transcript-button button\" role=\"button\">\n            <div class=\"transcript-text-container\">\n"
-    + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : (container.nullContext || {}),((stack1 = (depth0 != null ? depth0._transcript : depth0)) != null ? stack1.inlineTranscriptButton : stack1),{"name":"if","hash":{},"fn":container.program(31, data, 0),"inverse":container.program(33, data, 0),"data":data})) != null ? stack1 : "")
-    + "            </div>\n          </button>\n";
-},"31":function(container,depth0,helpers,partials,data) {
-    var stack1;
-
-  return "                "
-    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0._transcript : depth0)) != null ? stack1.inlineTranscriptButton : stack1), depth0))
-    + "\n";
-},"33":function(container,depth0,helpers,partials,data) {
-    var stack1;
-
-  return "                "
-    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0._transcript : depth0)) != null ? stack1.transcriptLink : stack1), depth0))
-    + "\n";
-},"35":function(container,depth0,helpers,partials,data) {
-    var stack1;
-
-  return "          <button onclick=\"window.open('"
-    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0._transcript : depth0)) != null ? stack1.transcriptLink : stack1), depth0))
-    + "')\" class=\"media-external-transcript-button button\" role=\"button\">\n            <div class=\"transcript-text-container\">\n"
-    + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : (container.nullContext || {}),((stack1 = (depth0 != null ? depth0._transcript : depth0)) != null ? stack1.transcriptLinkButton : stack1),{"name":"if","hash":{},"fn":container.program(36, data, 0),"inverse":container.program(33, data, 0),"data":data})) != null ? stack1 : "")
-    + "            </div>\n          </button>\n";
-},"36":function(container,depth0,helpers,partials,data) {
-    var stack1;
-
-  return "                "
-    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0._transcript : depth0)) != null ? stack1.transcriptLinkButton : stack1), depth0))
-    + "\n";
-},"38":function(container,depth0,helpers,partials,data) {
-    var stack1;
-
-  return "          <div class=\"media-inline-transcript-body-container\">\n            <div class=\"media-inline-transcript-body\">\n            "
-    + ((stack1 = (helpers.a11y_text || (depth0 && depth0.a11y_text) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),((stack1 = (depth0 != null ? depth0._transcript : depth0)) != null ? stack1.inlineTranscriptBody : stack1),{"name":"a11y_text","hash":{},"data":data})) != null ? stack1 : "")
-    + "\n            </div>\n          </div>\n";
-},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {});
-
-  return "<div class=\"media-inner component-inner\" role=\"region\" aria-label=\""
-    + container.escapeExpression(container.lambda(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0._globals : depth0)) != null ? stack1._components : stack1)) != null ? stack1._media : stack1)) != null ? stack1.ariaRegion : stack1), depth0))
-    + " "
-    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0._media : depth0)) != null ? stack1.transcriptLink : stack1),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "\" "
-    + ((stack1 = helpers["if"].call(alias1,((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0._globals : depth0)) != null ? stack1._components : stack1)) != null ? stack1._media : stack1)) != null ? stack1.ariaRegion : stack1),{"name":"if","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + ">\n"
-    + ((stack1 = container.invokePartial(partials.component,depth0,{"name":"component","data":data,"indent":"    ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
-    + "    <div class=\"media-widget component-widget a11y-ignore-aria\">\n\n"
-    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0._media : depth0)) != null ? stack1.mp3 : stack1),{"name":"if","hash":{},"fn":container.program(5, data, 0),"inverse":container.program(7, data, 0),"data":data})) != null ? stack1 : "")
-    + "    </div>\n"
-    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0._transcript : depth0),{"name":"if","hash":{},"fn":container.program(29, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "    \n</div>\n";
-},"usePartial":true,"useData":true});
+this["Handlebars"]["templates"]["blank"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    return "<div class=\"blank-inner component-inner\"></div>\n";
+},"useData":true});
 
 this["Handlebars"]["templates"]["text"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1;
@@ -818,7 +670,7 @@ this["Handlebars"]["templates"]["resources"] = Handlebars.template({"1":function
 },"useData":true,"useDepths":true});
 
 this["Handlebars"]["templates"]["notes"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "<div data-notes-bar class=\"adaptNotesCommandBar\">\n    <a data-note-new class=\"button\" title=\"New Note\">\n        <img src=\"assets/new.svg\" />\n    </a>\n    <a data-note-to-document class=\"button\" download=\"Course-Notes.html\"\n       data-href=\"data:application/octet-stream,@content\" title=\"Export as Document\">\n        <img src=\"assets/reading.svg\" />\n    </a>\n    <a data-note-export class=\"button\" download=\"Course-Notes.notes\"\n       data-href=\"data:application/octet-stream,@content\" title=\"Backup\">\n        <img src=\"assets/download.svg\" />\n    </a>\n\n    <label data-note-import for=\"file-upload\" class=\"button\" title=\"Import Backup\">\n        <img src=\"assets/upload.svg\" />\n    </label>\n    <input id=\"file-upload\" type=\"file\" accept=\".notes\"/>\n\n\n    <input data-note-search type=\"search\" placeholder=\"Search... (type+enter)\" />\n\n    <p data-notes-note>\n        Notes are stored in your browser cache.<br/><br/>\n        Please make sure to backup the notes to\n        your device (click \"Backup\" button),\n        before cleaning the cache.</p>\n</div>\n\n\n<div data-notes-list class=\"notes-inner\" role=\"complementary\">\n    <div class=\"aria-label a11y-ignore-focus prevent-default\" tabindex=\"0\"></div>\n</div>\n\n\n<div data-note-template class=\"notes-item-container\" data-note-index>\n    <div class=\"notes-item drawer-item\">\n        <button class=\"base notes-item-open drawer-item-open\" tabindex=\"0\" role=\"button\">\n            <div class=\"drawer-item-title\">\n                <div data-note-title class=\"drawer-item-title-inner h5\">TEMPLATE</div>\n            </div>\n            <div class=\"drawer-item-description\">\n                <div data-note-text class=\"drawer-item-description-inner\"></div>\n            </div>\n        </button>\n    </div>\n</div>\n\n\n<div data-note-editor class=\"drawer-item-open\">\n    <form>\n        <div class=\"adaptNoteCommandBar\">\n            <a data-note-save class=\"button\" title=\"Save\">\n                <img src=\"assets/save.svg\" />\n            </a>\n            <a data-note-delete class=\"button\" title=\"Delete\">\n                <img src=\"assets/delete.svg\" />\n            </a>\n            <a data-note-cancel class=\"button\" title=\"Cancel\">\n                <img src=\"assets/back.svg\" />\n            </a>\n        </div>\n\n        <div class=\"adaptNotesFormItem\">\n            <label>Title (*)</label>\n            <input type=\"text\" data-note-title required placeholder=\"Required\">\n        </div>\n\n        <div class=\"adaptNotesFormItem\">\n            <label>Text (*)</label>\n            <textarea  data-note-text required placeholder=\"Required\"></textarea>\n        </div>\n    </form>\n</div>\n";
+    return "<div data-notes-bar class=\"adaptNotesCommandBar\">\n    <a data-note-new class=\"button\" title=\"New Note\">\n        <img src=\"assets/new.svg\" />\n    </a>\n    <a data-note-to-document class=\"button\" download=\"Course-Notes.html\"\n       data-href=\"data:text/html;charset=utf-8,@content\" title=\"Export as Document\">\n        <img src=\"assets/reading.svg\" />\n    </a>\n    <a data-note-export class=\"button\" download=\"Course-Notes.notes\"\n       data-href=\"data:text/txt;charset=utf-8,@content\" title=\"Backup\">\n        <img src=\"assets/download.svg\" />\n    </a>\n\n    <label data-note-import for=\"file-upload\" class=\"button\" title=\"Import Backup\">\n        <img src=\"assets/upload.svg\" />\n    </label>\n    <input id=\"file-upload\" type=\"file\" accept=\".notes\"/>\n\n\n    <input data-note-search type=\"search\" placeholder=\"Search... (type+enter)\" />\n\n    <p data-notes-note>\n        Notes are stored in your browser cache.<br/><br/>\n        Please make sure to backup the notes to\n        your device (click \"Backup\" button),\n        before cleaning the cache.</p>\n</div>\n\n\n<div data-notes-list class=\"notes-inner\" role=\"complementary\">\n    <div class=\"aria-label a11y-ignore-focus prevent-default\" tabindex=\"0\"></div>\n</div>\n\n\n<div data-note-template class=\"notes-item-container\" data-note-index>\n    <div class=\"notes-item drawer-item\">\n        <button class=\"base notes-item-open drawer-item-open\" tabindex=\"0\" role=\"button\">\n            <div class=\"drawer-item-title\">\n                <div data-note-title class=\"drawer-item-title-inner h5\">TEMPLATE</div>\n            </div>\n            <div class=\"drawer-item-description\">\n                <div data-note-text class=\"drawer-item-description-inner\"></div>\n            </div>\n        </button>\n    </div>\n</div>\n\n\n<div data-note-editor class=\"drawer-item-open\">\n    <form>\n        <div class=\"adaptNoteCommandBar\">\n            <a data-note-save class=\"button\" title=\"Save\">\n                <img src=\"assets/save.svg\" />\n            </a>\n            <a data-note-delete class=\"button\" title=\"Delete\">\n                <img src=\"assets/delete.svg\" />\n            </a>\n            <a data-note-cancel class=\"button\" title=\"Cancel\">\n                <img src=\"assets/back.svg\" />\n            </a>\n        </div>\n\n        <div class=\"adaptNotesFormItem\">\n            <label>Title (*)</label>\n            <input type=\"text\" data-note-title required placeholder=\"Required\">\n        </div>\n\n        <div class=\"adaptNotesFormItem\">\n            <label>Text (*)</label>\n            <textarea  data-note-text required placeholder=\"Required\"></textarea>\n        </div>\n    </form>\n</div>\n";
 },"useData":true});
 
 this["Handlebars"]["templates"]["boxmenu-item"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
