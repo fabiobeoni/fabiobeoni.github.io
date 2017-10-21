@@ -1,0 +1,454 @@
+[
+  {
+    "_id": "c-05",
+    "_parentId": "b-05",
+    "_type": "component",
+    "_component": "text",
+    "_classes": "",
+    "_layout": "left",
+    "title": "Introduction",
+    "displayTitle": "",
+    "body": "<p>In this module you will learn about:</p><ul><li>Difference between server-side and client-side attacks</li><li>What is Cross-Site Scripting or XSS and how attackers exploit it</li><li>How to determine if a web application is vulnerable to XSS</li><li>How you can defend against XSS attacks</li></ul>",
+    "instruction": "Scroll down to get started.",
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-10",
+    "_parentId": "b-05",
+    "_type": "component",
+    "_component": "blank",
+    "_classes": "",
+    "_layout": "right"
+  },
+  {
+    "_id": "c-11",
+    "_layout": "full",
+    "_parentId": "b-07",
+    "_type": "component",
+    "body": "Discover the difference between server-side and client-side attacks.",
+    "displayTitle": "Client-side attacks",
+    "title": "Client-side attacks",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_classes": "",
+    "_component": "media",
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    },
+    "instruction": "",
+    "_media": {
+      "mp4": "course/en/video/client-side-attacks.mp4",
+      "ogv": "",
+      "mp3": "",
+      "source": "",
+      "type": "",
+      "poster": "course/en/images/client-side-attacks-banner.png",
+      "cc": []
+    },
+    "_setCompletionOn": "ended",
+    "_useClosedCaptions": false,
+    "_startLanguage": "en",
+    "_allowFullScreen": true,
+    "_transcript": {
+      "_setCompletionOnView": true,
+      "_inlineTranscript": true,
+      "_externalTranscript": false,
+      "inlineTranscriptButton": "Transcript",
+      "inlineTranscriptCloseButton": "Close Transcript",
+      "inlineTranscriptBody": "<p>When we think of attacks against web applications, we usually think of attacks targeting the server side. For example, exploiting a missing authorisation control to perform privilege escalation or a SQL injection vulnerability to dump credit cards out of a database.</p><p>However, there’s another class of attacks called “client-side” attacks. This refers to attacks that directly target users of your application. I know what you’re thinking: if these attacks do not target the server but the users instead, then how is this my problem? There’s a twist: a client-side attack targets a user of your application by directly exploiting a flaw in the application itself. Fix the flaw, the attack vector disappears.</p><p>Client-side attacks can have different effects, such as deliver a malicious payload to the user or trick them into performing actions on the vulnerable website without them being aware these actions are being performed on their behalf.</p>"
+    },
+    "_playerOptions": ""
+  },
+  {
+    "_id": "c-15",
+    "_layout": "full",
+    "_parentId": "b-10",
+    "_type": "component",
+    "body": "<p>Chances are, if your applications go through regular penetration testing, you’ve already encountered the term Cross-Site Scripting.</p><p><strong>Find out what Cross-Site Scripting is and what&#39;s the impact.</strong></p>\n",
+    "displayTitle": "Cross-Site Scripting",
+    "title": "Cross-Site Scripting",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_classes": "",
+    "_component": "narrative",
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    },
+    "instruction": "",
+    "mobileInstruction": "",
+    "_hasNavigationInTextArea": true,
+    "_setCompletionOn": "allItems",
+    "_items": [
+      {
+        "title": "Cross-Site Scripting",
+        "body": "<p>Cross-Site Scripting, also abbreviated as XSS, refers to a type of attack in which malicious scripts are injected by an attacker into a trusted website and then used to launch attacks against users of that website.</p>\n<p>XSS is a very-wide spread vulnerability and is number 3 in the OWASP Top 10.</p>",
+        "_graphic": {
+          "src": "course/en/images/xss-1.svg",
+          "alt": ""
+        },
+        "strapline": "TEST"
+      },
+      {
+        "title": "Cross-Site Scritping",
+        "body": "<p>The malicious input usually comes from a web request, for example a GET or POST parameter.</p>\n\n<p>Take a look at the example: in this case the untrusted input comes from the <tt>'e'</tt> parameter in the URL.</p>",
+        "_graphic": {
+          "src": "course/en/images/xss-2.svg",
+          "alt": ""
+        },
+        "strapline": "Cross-Site Scritping"
+      },
+      {
+        "title": "Cross-Site Scritping",
+        "body": "<p>Then, your application includes this untrusted input into a response, say a dynamic web page, without proper validation and encoding.</p>\n\n<p>In this example, the URL parameter is included in an error message displayed on the page.</p>",
+        "_graphic": {
+          "src": "course/en/images/xss-3.svg",
+          "alt": ""
+        },
+        "strapline": "Cross-Site Scritping"
+      },
+      {
+        "title": "Malicious XSS payloads",
+        "body": "<p>The attacker can exploit this by injecting a malicious payload that will run in the context of the users' browser and session.</p><p>In this example the malicious script is used to steal the session cookie and send it to the attacker.</p><p>Many other attacks are possibile. For instance, the attacker could observe and log users&#39; activity on the website, such as&nbsp;key presses or alter the content of the affected web pages and redirect users to malicious sites.",
+        "_graphic": {
+          "src": "course/en/images/xss-4.svg",
+          "alt": ""
+        },
+        "strapline": "Malicious XSS payloads"
+      }
+    ]
+  },
+  {
+    "_id": "c-42",
+    "_layout": "right",
+    "_parentId": "b-30",
+    "_type": "component",
+    "body": "",
+    "displayTitle": "",
+    "title": "",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_classes": "",
+    "_component": "media",
+    "_pageLevelProgress": {
+      "_isEnabled": false
+    },
+    "instruction": "",
+    "_media": {
+      "mp4": "course/en/video/xss-demo.mp4",
+      "ogv": "",
+      "mp3": "",
+      "source": "",
+      "type": "",
+      "poster": "course/en/images/xss-demo-poster.png",
+      "cc": []
+    },
+    "_setCompletionOn": "ended",
+    "_useClosedCaptions": false,
+    "_startLanguage": "en",
+    "_allowFullScreen": true,
+    "_transcript": {
+      "_setCompletionOnView": true,
+      "_inlineTranscript": false,
+      "_externalTranscript": true,
+      "inlineTranscriptButton": "Transcript",
+      "inlineTranscriptCloseButton": "Close Transcript",
+      "inlineTranscriptBody": "",
+      "transcriptLinkButton": "Transcript",
+      "transcriptLink": "course/en/pdf/mwri_pwd-cbt-004-xss-demo-transcript.pdf"
+    },
+    "_playerOptions": ""
+  },
+  {
+    "_id": "c-41",
+    "_layout": "left",
+    "_parentId": "b-30",
+    "_type": "component",
+    "body": "<p>In this demo you&#39;ll see how an XSS vulnerability can be identified and exploited on TheBazaare.com.</p>\n\n<p>The attacker will deploy a payload to keylog the victim and steal their credentials.</p>\n",
+    "displayTitle": "XSS Demo",
+    "title": "XSS Demo",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_classes": "",
+    "_component": "text",
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    },
+    "instruction": ""
+  },
+  {
+    "_id": "c-45",
+    "_parentId": "b-35",
+    "_type": "component",
+    "_component": "accordion",
+    "_classes": "",
+    "_layout": "full",
+    "title": "XSS Types",
+    "displayTitle": "XSS Types",
+    "body": "XSS vulnerabilities are usually categorised based on whether the payload is persistently injected into a website or if it’s only transient and never stored.",
+    "instruction": "Select the headings to find out more about the different XSS Types.",
+    "_items": [
+      {
+        "title": "Stored / Persistent XSS",
+        "body": "Stored or Persistent XSS happens when the XSS payload is stored on the target server, such as in the database, without being sanitised. Each time a victim retrieves a page that is dynamically built using the stored data, the malicious payload is executed.",
+        "_graphic": {
+          "src": "course/en/images/stored_xss.svg",
+          "alt": "Stored XSS"
+        }
+      },
+      {
+        "title": "Reflected XSS",
+        "body": "The other main type of XSS is non-persistent and is usually referred to as Reflected XSS. This happens when user input (normally within a GET parameter) is immediately returned by a web application in a dynamically built response page. <p>Exploitation of this issue involves some sort of social engineering, as the attack payload only lives in a URL and the user needs to click on the specific link for the payload to be activated.</p>",
+        "_graphic": {
+          "src": "course/en/images/reflected_xss.svg",
+          "alt": "Persistent XSS"
+        }
+      },
+      {
+        "title": "DOM-Based XSS",
+        "body": "DOM-based XSS is a type of attack where the XSS payload is executed as a result of client-side scripts that modify the page DOM in the victim’s browser using untrusted input.<p>In the following example, you can see JavaScript code extracting the <tt>lang</tt> parameter from the URL and using that value to initialise an option tag. Because <tt>document.write()</tt> just outputs the raw input to the page, if the attacker provides malicious tags, they are going to be appended to the page and executed. </p>",
+        "_graphic": {
+          "src": "course/en/images/dom_xss.svg",
+          "alt": "DOM-based XSS"
+        }
+      }
+    ],
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-60",
+    "_parentId": "b-40",
+    "_type": "component",
+    "_component": "mcq",
+    "_classes": "",
+    "_layout": "left",
+    "_attempts": 2,
+    "_questionWeight": 1,
+    "_canShowModelAnswer": true,
+    "_shouldDisplayAttempts": true,
+    "_isRandom": false,
+    "_selectable": 1,
+    "title": "XSS Lab",
+    "displayTitle": "XSS Lab",
+    "body": "Time to put in practice what you've learnt! <p>Click on <strong>Launch XSS Lab</strong> on the right. This will load a product page on TheBazaare.com where customers can post reviews.</p>",
+    "instruction": "Which field of the product review page is vulnerable to XSS?",
+    "_items": [
+      {
+        "text": "Name",
+        "_shouldBeSelected": false
+      },
+      {
+        "text": "Subject",
+        "_shouldBeSelected": true
+      },
+      {
+        "text": "Comment body",
+        "_shouldBeSelected": false
+      },
+      {
+        "text": "All fields are vulnerable",
+        "_shouldBeSelected": false
+      }
+    ],
+    "_feedback": {
+      "correct": "<span style=\"color:white;display:inline-block\" class=\"icon icon-tick\"> </span> That's correct!<br><br>Well done for identifying the XSS flaw. <br><br><em>Do not forget that malicious data can come not only from FORM fields but also from URL parameters, cookie values and third-party systems (such as a REST API, csv files, etc.).</em>",
+      "_incorrect": {
+        "notFinal": "<span style=\"color:white;display:inline-block\" class=\"icon icon-cross\"> </span> That’s not right but don't worry, you've got one more attempt.<br><br>You should try to inject something similar to '<tt>&lt;script&gt;alert('xss-test')&lt;/script&gt;</tt>' into each of the fields individually and see if any of them triggers the alert box.<br><br><em>Click on Reset to try again.</em>",
+        "final": "<span style=\"color:white;display:inline-block\" class=\"icon icon-cross\"> </span> That’s not right. <br><br>The subject field is vulnerable to XSS and you can check this by typing '<tt>&lt;script&gt;alert('xss-test')&lt;/script&gt;</tt>'<br><br><em>Do not forget that malicious data can come not only from FORM fields but also from URL parameters, cookie values and third-party systems (such as a REST API, csv files, etc.).</em>"
+      }
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-62",
+    "_parentId": "b-40",
+    "_type": "component",
+    "_component": "mwr-lab-iframe-loader",
+    "_layout": "right",
+    "_classes": "",
+    "image": "course/en/images/lab.svg",
+    "launchButtonText": "Launch XSS Lab",
+    "labTitle": "XSS Lab",
+    "iframeSrc": "course/en/labs/xss_lab/xss_lab.html"
+  },
+  {
+    "_id": "c-63",
+    "_parentId": "b-41",
+    "_type": "component",
+    "_component": "draganddrop",
+    "_classes": "",
+    "_layout": "full",
+    "_attempts": 2,
+    "_shouldDisplayAttempts": true,
+    "_questionWeight": 100,
+    "title": "XSS Contexts",
+    "displayTitle": "XSS Contexts",
+    "body": "<p>Untrusted input can be included in different contexts within a page. Each context will call for a different payload to be exploited.</p><p><strong>Match each injection point (denoted as 'UNTRUSTED') with a payload that would trigger an alert box.</strong></p>",
+    "instruction": "",
+    "_items": [
+      {
+        "text": "<tt>&lt;p&gt;Hello, <em>UNTRUSTED</em> &lt;/p&gt;&#10;</tt>",
+        "accepted": "&lt;script&gt;alert(1)&lt;/script&gt;"
+      },
+      {
+        "text": "&lt;img src=&#34;<em>UNTRUSTED</em>&#34; /&gt;",
+        "accepted": "non_existent\" onerror=\"alert(1)"
+      },
+      {
+        "text": "&lt;script&gt;var a = '<em>UNTRUSTED</em>'&lt;/script&gt;&#10;",
+        "accepted": "';alert(1);//"
+      }
+    ],
+    "dummyAnswers": [
+      "\"non_existent\" onerror=\"alert(1)",
+      "alert(1)"
+    ],
+    "animationTime": 800,
+    "animationDelay": 100,
+    "_feedback": {
+      "correct": "<span style=\"color:white;display:inline-block\" class=\"icon icon-tick\"> </span> That’s correct.<br><br>The aim of this little exercise was to make you realise how untrusted input can be included in different contexts within a page and how the malicious payloads will vary depending on the opportunities offered to the attacker by the injection context.<br><br>By the way, to get an overview of the different contexts, take a look at the OWASP Java Encoder page: <br><br><em><a href=\"https://www.owasp.org/index.php/OWASP_Java_Encoder_Project#tab=Use_the_Java_Encoder_Project\">https://www.owasp.org/index.php/OWASP_Java_Encoder_Project</a></em>",
+      "_incorrect": {
+        "notFinal": "<span style=\"color:white;display:inline-block\" class=\"icon icon-cross\"> </span> That’s not right but don't worry, it can take some time to get your head around XSS.<br><br>You've got one more attempt. One crucial aspect is to ensure that the resulting HTML/Javascript syntax is correct after the injection.<br><br><em>Click on Reset to try again.</em>",
+        "final": "<span style=\"color:white;display:inline-block\" class=\"icon icon-cross\"> </span> That’s not right. <br><br>Don't worry, it takes some time to get your head around XSS and the different injection contexts.<br><br>To get an overview of the different contexts, take a look at the OWASP Java Encoder page: <br><br><em><a href=\"https://www.owasp.org/index.php/OWASP_Java_Encoder_Project#tab=Use_the_Java_Encoder_Project\">https://www.owasp.org/index.php/OWASP_Java_Encoder_Project</a></em>"
+      }
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-65",
+    "_parentId": "b-42",
+    "_type": "component",
+    "_component": "accordion",
+    "_classes": "",
+    "_layout": "full",
+    "title": "XSS Defence",
+    "displayTitle": "XSS Defence",
+    "body": "Select the headings to find out how you can effectively defend against XSS.",
+    "instruction": "",
+    "_items": [
+      {
+        "title": "Output encoding",
+        "body": "<img style=\"float:right\" src=\"course/en/images/xss-html-encoding.svg\"><p>The primary defence against XSS is to contextually encode all untrusted data returned to the client.</p><ul><li>The type of encoding depends on the context where untrusted input is returned. </li><li>For untrusted content included directly within normal tags like <tt>div, p, b, td,</tt> etc., use <strong>HTML Entity Encoding</strong>. </li><li>HTML Entity Encoding is the process of replacing certain meta-characters, such as the brackets and the quotes, with their HTML entity equivalent. This means that these characters lose their meaning as metacharacters and become harmless.</li></ul>",
+        "strapline": "Output encoding"
+      },
+      {
+        "title": "HTML Entity Encoding",
+        "body": "<img style=\"float:right\" src=\"course/en/images/xss-html-encoding-functions.svg\"><p>HTML encoding functions are available by default on all major web development platforms.</p><p>For example, in ASP.NET you can use the HtmlEncode() function. With ASP.NET MVC, using the Razor view engine, all output is HTML-encoded unless <ll>Html.Raw()</ll> is used.</p><p>For Java Server Pages, you can rely on the <ll>c:out</ll> tag of the Standard Tag Library for automatic HTML encoding (provided the <tt>escapeXml</tt> attribute is set to <tt>true</tt>).</p><p>Also, most templating languages such as Mustache, Handlebars, etc. will perform HTML-encoding by default on string interpolation.</p>",
+        "strapline": "HTML Entity Encoding"
+      },
+      {
+        "title": "Input Validation",
+        "body": "<p>As an additional layer of defence, do not forget input validation. </p><p>A <strong>whitelist</strong> approach is always preferred. For example, if you’re expecting the user to select the name of a country, ensure that you have a list of valid countries and that the user’s selection matches an item on that list. Or, if you’re expecting a user’s age as input, ensure that you’re receiving a positive number within a reasonable age range. For stricter or more complex validation, consider using regular expressions. </p><p>On the other hand, a <strong>blacklist</strong> approach is usually tricky to implement and not recommended, as it's difficult to enumerate all possible malicious inputs and often attackers find ways to bypass such blacklists.</p>",
+        "strapline": "Input Validation"
+      },
+      {
+        "title": "HTTPOnly Cookie Flag",
+        "body": "<img style=\"float:right\" src=\"course/en/images/httponly.svg\"><p>Remember the principle of defence in depth? A popular measure you can employ to mitigate the effect of XSS is to apply the HTTP Only flag to sensitive cookies, such as session cookies. </p><p>The HTTPOnly flag will prevent JavaScript from getting access to to the value of a cookie. For example, if this is applied to the session cookie, it means that an XSS payload cannot trivially read and forward the value of the cookie to the attacker for easy session hijacking. </p></p> However, keep in mind that even with the HTTP Only flag, other attacks would still be possible. For example, the attacker could still keylog the victim, observe interactions with the compromised website, retrieve pages and perform actions on the user's behalf.</p>",
+        "strapline": "HTTPOnly Cookie Flag"
+      },
+      {
+        "title": "Content Security Policy",
+        "body": "<p>Content Security Policy (CSP) is an HTTP header used as a defence-in-depth measure to mitigate the impact of attacks such as Cross-Site Scripting (XSS) vulnerabilities.</p><p>CSP provides a standard method to declare approved origins of content that browsers should be allowed to load on that website (such as JavaScript, CSS, HTML frames, images, embeddable ojects, ...)</p><p>For a detailed discussion and guidelines on how to implement CSP, refer to the following link: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP\">https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP</a></p>",
+        "_graphic": {
+          "src": "course/en/images/csp.svg",
+          "alt": ""
+        },
+        "strapline": "Content Security Policy"
+      }
+    ],
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-68",
+    "_parentId": "b-43",
+    "_type": "component",
+    "_component": "code-katas",
+    "_classes": "",
+    "_layout": "full",
+    "_attempts": 2,
+    "_questionWeight": 1,
+    "_canShowModelAnswer": false,
+    "_shouldDisplayAttempts": true,
+    "_isRandom": false,
+    "_selectable": 2,
+        "iframeSrc": "course/en/code_snippets/index.html",
+    "title": "Code Katas",
+    "displayTitle": "Code Katas",
+    "body": "<p>Choose a language and click 'Launch' to begin. Review the code snippets and determine whether they vulnerable to XSS or not.</p>",
+    "_items": [
+      {
+        "text": "Snippet 1",
+        "_shouldBeSelected": true
+      },
+      {
+        "text": "Snippet 2",
+        "_shouldBeSelected": false
+      },
+      {
+        "text": "Snippet 3",
+        "_shouldBeSelected": false
+      },
+      {
+        "text": "Snippet 4",
+        "_shouldBeSelected": true
+      }
+    ],
+    "_feedback": {
+      "correct": "<span style=\"color:white;display:inline-block\" class=\"icon icon-tick\"> </span> That’s correct!<br><br>For detailed feedback, go back to the snippets and hover over the highligted lines of code.<br><br>Important points to keep in mind:<br><br><ul><li><strong>White-lists</strong> are usually better than balck-lists. Even when they are thorough, black-lists are more likely to be bypassed by persistent attackers. To get an idea of how complicated payloads can be, take a look at this OWASP page: <a target='_blank' href=\"https://www.owasp.org/index.php/XSS_Filter_Evasion_Cheat_Sheet\">https://www.owasp.org/index.php/XSS_Filter_Evasion_Cheat_Sheet</a></li><li>You should always apply the <strong>defence-in-depth</strong> principle and combine contextual output encoding (Snippet 2) with white-lists (Snippet 3).</li></ul>",
+      "_incorrect": {
+        "notFinal":"<span style=\"color:white;display:inline-block\" class=\"icon icon-cross\"> </span> That’s not right but don't worry, you've got one more attempt.<br><br>Hint: pay attention to the methods that are being used to sanitise user input and remeber that attackers can very often bypass black-list approaches.<br><br><em>Click on Reset to try again.</em>",
+        "final": "<span style=\"color:white;display:inline-block\" class=\"icon icon-cross\"> </span> That’s not right.<br><br>For detailed feedback, go back to the snippets and hover over the highligted lines of code.<br><br>Important points to keep in mind:<br><br><ul><li><strong>White-lists</strong> are usually better than balck-lists. Even when they are thorough, black-lists are more likely to be bypassed by persistent attackers. To get an idea of how complicated payloads can be, take a look at this OWASP page: <a target='_blank' href=\"https://www.owasp.org/index.php/XSS_Filter_Evasion_Cheat_Sheet\">https://www.owasp.org/index.php/XSS_Filter_Evasion_Cheat_Sheet</a></li><li>You should always apply the <strong>defence-in-depth</strong> principle and combine contextual output encoding (Snippet 2) with white-lists (Snippet 3).</li></ul>"
+      }
+    },
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    }
+  },
+  {
+    "_id": "c-69",
+    "_layout": "full",
+    "_parentId": "b-45",
+    "_type": "component",
+    "body": "<p>In this module you've learnt about Cross-Site Scripting and what risk this vulnerability poses to your applications. You've seen a demo of an attacker exploting an XSS flaw against TheBazaare.com to keyloag a users' credentials and then you exploited XSS yourself injecting  arbitrary JavaScript in a product review. </p>\n\n<p><strong>Click or tap on the arrow on the left side to review the main defence strategies to mitigate XSS.</strong></p>\n",
+    "displayTitle": "Summary",
+    "title": "Summary",
+    "_isAvailable": true,
+    "_isOptional": false,
+    "_classes": "",
+    "_component": "reveal",
+    "_pageLevelProgress": {
+      "_isEnabled": true
+    },
+    "instruction": "",
+    "_direction": "left",
+    "control": {
+      "hideText": "Hide",
+      "showText": "Show"
+    },
+    "first": {
+      "title": "Roadmap",
+      "src": "course/en/images/defence-banner.png",
+      "alt": "",
+      "body": "",
+      "_maxCharacters": 50,
+      "moreText": "More"
+    },
+    "second": {
+      "title": "XSS Defence",
+      "src": "course/en/images/reveal-blue-background.png",
+      "alt": "",
+      "body": "<h1>XSS Defences</h1><ul>\n\t<li>Ensure all unstrusted data included in a page is properly encoded (e.g.: <strong>HTML Entity Encoding</strong>)</li>\n\t<li>Perform strong input validation based on <strong>whitelists</strong></li>\n\t<li>Implement the <strong>HTTPOnly</strong> flag on all sensitive cookies</li>\n\t<li>Configure the <strong>Content Security Policy (CSP)</strong> header for your website</li>",
+      "_maxCharacters": null,
+      "moreText": "More"
+    }
+  }
+]

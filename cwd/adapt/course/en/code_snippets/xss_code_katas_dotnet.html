@@ -1,0 +1,282 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bulma.css">
+    <link rel="stylesheet" href="css/monokai-sublime.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div id="tabs">
+        <div class="tabs">
+            <ul>
+                <li area-selected="true"><a href="#tabs-1">Snippet 1</a></li>
+                <li><a href="#tabs-2">Snippet 2</a></li>
+                <li><a href="#tabs-3">Snippet 3</a></li>
+                <li><a href="#tabs-4">Snippet 4</a></li>
+            </ul>
+        </div>
+        <div id="tabs-1">
+            <div class="vuln-container">
+
+                <form action="#">
+                    <p><input type="checkbox" class="answer" id="0" /><label for="0"><span class="ui"></span><span class="text">Vulnerable</span></label></p>
+                </form>
+
+            </div>
+            <pre class="pre-code"><code class="hljs hljs-line-numbers" style="float: left;">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+</code><code class="c# hljs xml">
+<span class="hljs-tag">&lt;<span class="hljs-title">%@</span> <span class="hljs-attribute">Language</span>=<span class="hljs-value">C#</span> %&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">runat</span>=<span class="hljs-value">"server"</span> <span class="hljs-attribute">language</span>=<span class="hljs-value">"C#"</span>&gt;</span><span class="cs">
+     <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Page_Load</span>(<span class="hljs-params"><span class="hljs-keyword">object</span> sender, EventArgs e</span>)
+     </span>{
+       <span class="to-highlight tooltip"><span class="tooltiptext hide"></span><span class="hljs-keyword">string</span> errorMsg = Request.QueryString[<span class="hljs-string">"e"</span>] <span class="hljs-keyword">as</span> <span class="hljs-keyword">string</span>;</span>
+       lblError.Text = errorMsg;
+     }
+   </span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+
+   <span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"container"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"alert alert-danger"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>Error!<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span> Sorry, an error has occurred.
+        <span class="hljs-tag">&lt;<span class="hljs-title">asp:label</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"lblError"</span> <span class="hljs-attribute">runat</span>=<span class="hljs-value">"server"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">asp:label</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
+
+</code></pre>
+
+        </div>
+        <div id="tabs-2">
+            <div class="vuln-container">
+
+                <form action="#">
+                    <p><input type="checkbox" class="answer" id="1" /><label for="1"><span class="ui"></span><span class="text">Vulnerable</span></label></p>
+                </form>
+
+            </div>
+           <pre class="pre-code"><code class="hljs hljs-line-numbers" style="float: left;">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+</code><code class="c# hljs xml">
+<span class="hljs-tag">&lt;<span class="hljs-title">%@</span> <span class="hljs-attribute">Language</span>=<span class="hljs-value">C#</span> %&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">runat</span>=<span class="hljs-value">"server"</span> <span class="hljs-attribute">language</span>=<span class="hljs-value">"C#"</span>&gt;</span><span class="cs">
+     <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Page_Load</span>(<span class="hljs-params"><span class="hljs-keyword">object</span> sender, EventArgs e</span>)
+     </span>{
+       <span class="hljs-keyword">string</span> errorMsg = Request.QueryString[<span class="hljs-string">"e"</span>] <span class="hljs-keyword">as</span> <span class="hljs-keyword">string</span>;
+       <span class="to-highlight tooltip"><span class="tooltiptext hide"></span>lblError.Text = HttpUtility.HtmlEncode(errorMsg);</span>
+     }
+   </span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+
+   <span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"container"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"alert alert-danger"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>Error!<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span> Sorry, an error has occurred.
+        <span class="hljs-tag">&lt;<span class="hljs-title">asp:label</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"lblError"</span> <span class="hljs-attribute">runat</span>=<span class="hljs-value">"server"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">asp:label</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
+
+</code></pre>
+        </div>
+        <div id="tabs-3">
+            <div class="vuln-container">
+
+                <form action="#">
+                    <p><input type="checkbox" class="answer" id="2" /><label for="2"><span class="ui"></span><span class="text">Vulnerable</span></label></p>
+                </form>
+
+            </div>
+            <pre class="pre-code"><code class="hljs hljs-line-numbers" style="float: left;">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+</code><code class="asp hljs xml">
+<span class="hljs-tag">&lt;<span class="hljs-title">%@</span> <span class="hljs-attribute">Language</span>=<span class="hljs-value">C#</span> %&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">runat</span>=<span class="hljs-value">"server"</span> <span class="hljs-attribute">language</span>=<span class="hljs-value">"C#"</span>&gt;</span><span class="cs">
+     <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Page_Load</span>(<span class="hljs-params"><span class="hljs-keyword">object</span> sender, EventArgs e</span>)
+     </span>{
+       <span class="hljs-keyword">string</span> errorMsg = Request.QueryString[<span class="hljs-string">"e"</span>] <span class="hljs-keyword">as</span> <span class="hljs-keyword">string</span>;
+       lblError.Text = sanitise(errorMsg);
+     }
+     
+     <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">string</span> <span class="hljs-title">sanitise</span>(<span class="hljs-params"><span class="hljs-keyword">string</span> untrusted</span>) 
+     </span>{
+       <span class="to-highlight tooltip"><span class="tooltiptext hide"></span><span class="hljs-comment">/* Strip any non-alphanumeric character. */</span>
+<span class="hljs-keyword">return</span> Regex.Replace(untrusted, <span class="hljs-string">@"[^a-zA-Z0-9\s]"</span>, <span class="hljs-string">" "</span>);</span>
+     }
+   </span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+
+   <span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"container"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"alert alert-danger"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>Error!<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span> Sorry, an error has occurred.
+        <span class="hljs-tag">&lt;<span class="hljs-title">asp:label</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"lblError"</span> <span class="hljs-attribute">runat</span>=<span class="hljs-value">"server"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">asp:label</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
+
+</code></pre>
+        </div>
+        <div id="tabs-4">
+            <div class="vuln-container">
+
+                <form action="#">
+                    <p><input type="checkbox" class="answer" id="3" /><label for="3"><span class="ui"></span><span class="text">Vulnerable</span></label></p>
+                </form>
+
+            </div>
+             <pre class="pre-code"><code class="hljs hljs-line-numbers" style="float: left;">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+</code><code class="c# hljs xml">
+<span class="hljs-tag">&lt;<span class="hljs-title">%@</span> <span class="hljs-attribute">Language</span>=<span class="hljs-value">C#</span> %&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">runat</span>=<span class="hljs-value">"server"</span> <span class="hljs-attribute">language</span>=<span class="hljs-value">"C#"</span>&gt;</span><span class="cs">
+     <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Page_Load</span>(<span class="hljs-params"><span class="hljs-keyword">object</span> sender, EventArgs e</span>)
+     </span>{
+       <span class="hljs-keyword">string</span> errorMsg = Request.QueryString[<span class="hljs-string">"e"</span>] <span class="hljs-keyword">as</span> <span class="hljs-keyword">string</span>;
+       lblError.Text = sanitise(errorMsg);
+     }
+     
+     <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">string</span> <span class="hljs-title">sanitise</span>(<span class="hljs-params"><span class="hljs-keyword">string</span> untrusted</span>) 
+     </span>{
+       <span class="to-highlight tooltip"><span class="tooltiptext hide"></span><span class="hljs-keyword">return</span> untrusted.Replace(<span class="hljs-string">"&lt;script&gt;"</span>, <span class="hljs-string">" "</span>);</span>
+     }
+   </span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+
+   <span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"container"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"alert alert-danger"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>Error!<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span> Sorry, an error has occurred.
+        <span class="hljs-tag">&lt;<span class="hljs-title">asp:label</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"lblError"</span> <span class="hljs-attribute">runat</span>=<span class="hljs-value">"server"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">asp:label</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
+
+</code></pre>
+        </div>
+    </div>
+    <div class="notes hide">
+
+    </div>
+</body>
+
+<script src="js/jquery-1.12.4.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/custom.js"></script>
+<script>
+  var lang = 'dotnet';
+</script>
+</html>

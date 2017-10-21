@@ -1,0 +1,21 @@
+[
+	{
+		"_id": "co-05",
+		"_parentId": "course",
+		"_type": "page",
+		"_classes": "",
+		"title": "Client-Side Attacks - XSS",
+		"displayTitle": "Client-Side Attacks - XSS",
+		"pageBody": "<div class='module-number'>Module 4</div>In this module we'll introduce client-side attacks against web applications and we'll analyse the most common of these attacks, Cross-Site Scripting.",
+		"body": "<div class='module-number'>Module 4</div>In this module we'll introduce client-side attacks against web applications and we'll analyse the most common of these attacks, Cross-Site Scripting.",
+		"_graphic": {
+			"src": "course/en/images/menu_thumb.jpg",
+			"alt": "Placeholder graphic."
+		},
+		"linkText": "View",
+		"duration": "2 mins",
+		"_pageLevelProgress": {
+			"_isEnabled": true
+		}
+	}
+]

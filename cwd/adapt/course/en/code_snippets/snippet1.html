@@ -1,0 +1,144 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bulma.css">
+    <link rel="stylesheet" href="css/monokai-sublime.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="tabs">
+        <div class="tabs">
+            <ul>
+                <li area-selected="true"><a href="#tabs-1">Snippet 1</a></li>
+                <li><a href="#tabs-2">Snippet 2</a></li>
+            </ul>
+        </div>
+        <div id="tabs-1">
+            <pre class="pre-code" style="height: 642px;"><code  class="hljs hljs-line-numbers" style="float: left;">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+
+</code><code class="java hljs main-pane"><span class="hljs-comment">/**
+ * <span class="hljs-doctag">@author</span> John Smith &lt;john.smith<span class="hljs-doctag">@example</span>.com&gt;
+ * <span class="hljs-doctag">@version</span> 1.0
+*/</span>
+<span class="hljs-keyword">package</span> l2f.gameserver.model;
+
+<span class="hljs-keyword">import</span> java.util.ArrayList;
+
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">L2Character</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">L2Object</span> </span>{
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> Short ABNORMAL_EFFECT_BLEEDING = <span class="hljs-number">0x0_0_0_1</span>; <span class="hljs-comment">// not sure</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">moveTo</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x, <span class="hljs-keyword">int</span> y, <span class="hljs-keyword">int</span> z)</span> </span>{
+    _ai = <span class="hljs-keyword">null</span>;
+    _log.warning(<span class="hljs-string">"Should not be called"</span>);
+    <span class="hljs-keyword">if</span> (<span class="hljs-number">1</span> &gt; <span class="hljs-number">5</span>) {
+      <span class="hljs-keyword">return</span>;
+    }
+  }
+
+  <span class="hljs-comment">/** Task of AI notification */</span>
+  <span class="hljs-annotation">@SuppressWarnings</span>( { <span class="hljs-string">"nls"</span>, <span class="hljs-string">"unqualified-field-access"</span>, <span class="hljs-string">"boxing"</span> })
+  <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">NotifyAITask</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Runnable</span> </span>{
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> CtrlEvent _evt;
+
+    List&lt;String&gt; mList = <span class="hljs-keyword">new</span> ArrayList&lt;String&gt;()
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">()</span> </span>{
+      <span class="hljs-keyword">try</span> {
+        getAI().notifyEvent(_evt, _evt.class, <span class="hljs-keyword">null</span>);
+      } <span class="hljs-keyword">catch</span> (Throwable t) {
+        t.printStackTrace();
+      }
+    }
+  }
+}
+</code></pre>
+        </div>
+        <div id="tabs-2">
+            <pre class="pre-code"><code class="hljs hljs-line-numbers" style="float: left;">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+
+</code><code class="java hljs main-pane">
+<span class="hljs-comment">/* Just drop your code in here and open the page in a browser. The HighlightJs library will format the code for you. Then, just copy the code in a tab within the template.*/</span>
+<span class="hljs-comment">/* For the scrollbars to work, you'll need to add the clas 'main-pane' to the code tag that contains the source code */</span>
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HelloWorld</span> </span>{
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+        <span class="hljs-comment">// Prints "Hello, World" to the terminal window.</span>
+        System.out.println(<span class="hljs-string">"Hello, World"</span>);
+    }
+
+}
+</code></pre>
+        </div>
+    </div>
+
+</body>
+
+<script src="js/jquery-1.12.4.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script>
+    $(function () {
+        $("#tabs").tabs();
+
+        $('.pre-code').height(window.innerHeight - 36);
+
+        $(window).resize(function () {
+            $('.pre-code').height(window.innerHeight - 36);
+        });
+
+        $('code.main-pane').on('scroll', function () {
+            var line_numbers = $(this).prev('code.hljs.hljs-line-numbers')
+            line_numbers.scrollTop($(this).scrollTop());
+        });
+
+    });
+
+</script>
+
+</html>

@@ -1,0 +1,54 @@
+html,
+body {
+  height: 100%;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.browser-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.browser-container {
+  position: relative;
+  padding-top: 30px;
+  flex-grow: 1;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch; //<<--- THIS IS THE KEY 
+  border: solid black 1px;
+}
+
+.topbar {
+  background: url(../tabbar.png) 0 0 no-repeat;
+  padding: 0;
+  width: 100%;
+  height: 26px;
+  margin: 0 auto;
+  background-color: #455a64
+}
+
+.example-controls {
+  margin: 0 auto;
+  background-color: #f4f4f4;
+  border: 1px solid #f0f0f0;
+  width: 694px;
+  padding: 2px 3px;
+  border: 1px solid #999;
+  border-bottom: none;
+}
+
+.urlbar {
+  width: 100%;
+  padding: 3px;
+  border: 1px solid #666;
+  font-family: monospace;
+}
+
+body>* {
+  flex-shrink: 0;
+}
