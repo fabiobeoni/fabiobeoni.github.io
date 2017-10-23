@@ -1,6 +1,7 @@
 const cacheName = 'pwa-starter-kit';
-const cacheVersion = `${cacheName}::1.0.0`;
-const networkFiles = [];
+const cacheVersion = `${cacheName}::1.0.1`;
+
+//const networkFiles = [];
 
 self.addEventListener('install', event => {
 
@@ -16,8 +17,13 @@ self.addEventListener('install', event => {
                     console.log('[install] Adding files from JSON file: ', files);
 
                     files.forEach((file)=>{
-                        cache.add(file);
-                        console.log('Cached file '+ file);
+                        try{
+                            cache.add(file);
+                            console.log('Cached file '+ file);
+                        }
+                        catch (err){
+                            alert(err.message);
+                        }
                     });
 
                     return cache.addAll([]);
@@ -45,6 +51,7 @@ self.addEventListener('activate', event => {
 
 });
 
+/*
 self.addEventListener('fetch', event => {
 
     if (networkFiles.filter(item => event.request.url.match(item)).length) {
@@ -74,3 +81,4 @@ self.addEventListener('fetch', event => {
     }
 
 });
+*/
