@@ -1,11 +1,13 @@
 const cacheName = 'pwa-starter-kit';
-const cacheVersion = `${cacheName}::1.0.1`;
+const cacheVersion = `${cacheName}::1.0.2`;
 
 //const networkFiles = [];
+let installCompleted = false;
 
 self.addEventListener('install', event => {
 
     console.log('[pwa install]');
+
 
     event.waitUntil(
         caches.open(cacheVersion)
@@ -22,13 +24,12 @@ self.addEventListener('install', event => {
                             console.log('Cached file '+ file);
                         }
                         catch (err){
-                            alert(err.message);
+                            console.error(err);
                         }
                     });
 
                     return cache.addAll([]);
                 });
-
             })
     );
 
@@ -37,6 +38,18 @@ self.addEventListener('install', event => {
 self.addEventListener('activate', event => {
 
     console.log('[pwa activate]');
+
+    self.clients.matchAll({
+        includeUncontrolled: true
+    }).then(function(clients) {
+        clients.forEach(function(client) {
+            if(!installCompleted)
+                client.postMessage({
+                    "command": "broadcastOnRequest",
+                    "message": "Could not cache all files as needed."
+                });
+        })
+    });
 
     event.waitUntil(
         caches.keys().then(keys =>
@@ -47,13 +60,16 @@ self.addEventListener('activate', event => {
         )
     );
 
-    return self.clients.claim();
+    return self.clients.claimClients();
 
 });
 
-/*
+
 self.addEventListener('fetch', event => {
 
+    debugger;
+
+    /*
     if (networkFiles.filter(item => event.request.url.match(item)).length) {
 
         console.log('[network fetch]', event.request.url);
@@ -64,7 +80,7 @@ self.addEventListener('fetch', event => {
         );
 
     } else {
-
+*/
         console.log('[pwa fetch]', event.request.url);
 
         event.respondWith(
@@ -78,7 +94,7 @@ self.addEventListener('fetch', event => {
                 })
         );
 
-    }
+    //}
 
 });
-*/
+
