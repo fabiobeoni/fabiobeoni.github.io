@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Page",
+    "displayTitle": "Page",
+    "body": "",
+    "_classes": "",
+    "pageBody": "",
+    "linkText": "View",
+    "duration": "",
+    "_lockedBy": [],
+    "_lockType": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_id": "5bc0614c37218c40f06c70f1",
+    "_type": "page",
+    "_parentId": "course",
+    "_graphic": {
+      "alt": "",
+      "src": ""
+    },
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    }
+  }
+]

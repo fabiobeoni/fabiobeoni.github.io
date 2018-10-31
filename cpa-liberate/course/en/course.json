@@ -1,0 +1,84 @@
+{
+  "title": "Course Sample",
+  "displayTitle": "Course Sample",
+  "body": "",
+  "description": "",
+  "_latestTrackingId": 8,
+  "_buttons": {
+    "_submit": {
+      "buttonText": "Submit",
+      "ariaLabel": "Submit"
+    },
+    "_reset": {
+      "buttonText": "Reset",
+      "ariaLabel": "Reset"
+    },
+    "_showCorrectAnswer": {
+      "buttonText": "Show correct answer",
+      "ariaLabel": "Show correct answer"
+    },
+    "_hideCorrectAnswer": {
+      "buttonText": "Hide correct answer",
+      "ariaLabel": "Hide correct answer"
+    },
+    "_showFeedback": {
+      "buttonText": "Show feedback",
+      "ariaLabel": "Show feedback"
+    },
+    "remainingAttemptsText": "remaining attempts",
+    "remainingAttemptText": "final attempt",
+    "disabledAriaLabel": "This button is disabled at the moment"
+  },
+  "_classes": "",
+  "_lockType": "",
+  "_id": "course",
+  "_start": {
+    "_isEnabled": false,
+    "_startIds": [],
+    "_force": false,
+    "_isMenuDisabled": false
+  },
+  "_globals": {
+    "_accessibility": {
+      "accessibilityToggleTextOn": "Turn accessibility on?",
+      "accessibilityToggleTextOff": "Turn accessibility off?",
+      "skipNavigationText": "Skip navigation",
+      "_accessibilityInstructions": {
+        "touch": "Usage instructions. Use swipe left for next. Use swipe right for previous. Use a double tab to select. Use a two finger slide up to go to the top of the page.",
+        "notouch": "Usage instructions. Use tab for next. Use shift tab for previous. Use enter to select. Use escape to go to the top of the page.",
+        "ipad": "Usage instructions for touchscreens. Use swipe left for next. Use swipe right for previous. Use a double tab to select. Use a two finger slide up to go to the top of the page. Usage instructions for keyboard access. Use left for next. Use right for previous. Use up and down together to select."
+      },
+      "_ariaLabels": {
+        "navigation": "Course navigation bar",
+        "skipNavigation": "Skip Navigation",
+        "menuLoaded": "Menu loaded",
+        "page": "Page",
+        "pageLoaded": "Page loaded",
+        "previous": "Back",
+        "navigationDrawer": "Open course resources and search",
+        "drawer": "Side drawer",
+        "closePopup": "Close popup",
+        "next": "Next",
+        "done": "Done",
+        "complete": "Complete",
+        "incomplete": "Incomplete",
+        "correct": "Correct",
+        "incorrect": "Incorrect",
+        "locked": "Locked",
+        "accessibilityToggleButton": "By selecting this button you can set whether accessibility is turned on or off",
+        "feedbackPopUp": "Popup opened",
+        "visited": "Visited",
+        "menuIndicatorHeading": "Menu item heading "
+      }
+    }
+  },
+  "_type": "course",
+  "_notes": {
+    "_isEnabled": true,
+    "title": "Notes",
+    "description": "Take your notes on course",
+    "browserWarn": "Notes are available only for modern browsers. Please update your browser.",
+    "fileReadError": "Error reading the file.",
+    "validationWarn": "Please fill the form."
+  }
+}

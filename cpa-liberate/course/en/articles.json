@@ -1,0 +1,21 @@
+[
+  {
+    "title": "Exercises",
+    "displayTitle": "Exercises",
+    "body": "<p>Here they are all together but of course you can split on different \"articles\" / \"blocks\" / \"pages\" as needed.</p>",
+    "_classes": "",
+    "instruction": "",
+    "_isOptional": false,
+    "_isAvailable": true,
+    "_isHidden": false,
+    "_isVisible": true,
+    "_id": "5bd98e879a754a30918147ec",
+    "_parentId": "5bc0614c37218c40f06c70f1",
+    "_type": "article",
+    "_onScreen": {
+      "_isEnabled": false,
+      "_classes": "",
+      "_percentInviewVertical": 50
+    }
+  }
+]
