@@ -1,7 +1,7 @@
 [
   {
-    "title": "Page",
-    "displayTitle": "Page",
+    "title": "Page title",
+    "displayTitle": "Page title",
     "body": "",
     "_classes": "",
     "pageBody": "",
@@ -13,17 +13,8 @@
     "_isAvailable": true,
     "_isHidden": false,
     "_isVisible": true,
-    "_id": "5bc0614c37218c40f06c70f1",
+    "_id": "5bdb0d19f01579697c05e0cb",
     "_type": "page",
-    "_parentId": "course",
-    "_graphic": {
-      "alt": "",
-      "src": ""
-    },
-    "_onScreen": {
-      "_isEnabled": false,
-      "_classes": "",
-      "_percentInviewVertical": 50
-    }
+    "_parentId": "course"
   }
 ]

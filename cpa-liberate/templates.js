@@ -370,38 +370,46 @@ this["Handlebars"]["templates"]["shadow"] = Handlebars.template({"compiler":[7,"
     return "<div id=\"shadow\" class=\"shadow display-none\"></div>";
 },"useData":true});
 
-this["Handlebars"]["templates"]["responsiveIframe"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
-    var helper;
-
-  return container.escapeExpression(((helper = (helper = helpers._scrolling || (depth0 != null ? depth0._scrolling : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"_scrolling","hash":{},"data":data}) : helper)));
+this["Handlebars"]["templates"]["graphic"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
+    return " graphic-widget-attribution";
 },"3":function(container,depth0,helpers,partials,data) {
-    return "no";
-},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.escapeExpression, alias3=container.lambda;
+    var stack1;
 
-  return "<div class=\"component-inner responsiveIframe-inner\">\n"
-    + ((stack1 = container.invokePartial(partials.component,depth0,{"name":"component","data":data,"indent":"  ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
-    + "  <div class=\"component-widget responsiveIframe-widget\">\n    <div class=\"responsiveIframe-iframe-holder\">\n      <iframe scrolling=\""
-    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0._scrolling : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.program(3, data, 0),"data":data})) != null ? stack1 : "")
-    + "\" class=\"responsiveIframe-iframe\" src=\""
-    + alias2(((helper = (helper = helpers._source || (depth0 != null ? depth0._source : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(alias1,{"name":"_source","hash":{},"data":data}) : helper)))
-    + "\"\n        data-height-large=\""
-    + alias2(alias3(((stack1 = (depth0 != null ? depth0._height : depth0)) != null ? stack1._large : stack1), depth0))
-    + "\" data-height-medium=\""
-    + alias2(alias3(((stack1 = (depth0 != null ? depth0._height : depth0)) != null ? stack1._medium : stack1), depth0))
-    + "\" data-height-small=\""
-    + alias2(alias3(((stack1 = (depth0 != null ? depth0._height : depth0)) != null ? stack1._small : stack1), depth0))
-    + "\"\n        data-width-large=\""
-    + alias2(alias3(((stack1 = (depth0 != null ? depth0._width : depth0)) != null ? stack1._large : stack1), depth0))
-    + "\" data-width-medium=\""
-    + alias2(alias3(((stack1 = (depth0 != null ? depth0._width : depth0)) != null ? stack1._medium : stack1), depth0))
-    + "\" data-width-small=\""
-    + alias2(alias3(((stack1 = (depth0 != null ? depth0._width : depth0)) != null ? stack1._small : stack1), depth0))
-    + "\" allowfullscreen webkitallowfullscreen mozallowfullscreen>\n      </iframe>\n    </div>\n  </div>\n</div>\n";
+  return " aria-label=\""
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0._graphic : depth0)) != null ? stack1.alt : stack1), depth0))
+    + "\" tabindex=\"0\"";
+},"5":function(container,depth0,helpers,partials,data) {
+    return " class=\"a11y-ignore\" aria-hidden=\"true\" tabindex=\"-1\"";
+},"7":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "      <div class=\"graphic-attribution\">"
+    + ((stack1 = container.lambda(((stack1 = (depth0 != null ? depth0._graphic : depth0)) != null ? stack1.attribution : stack1), depth0)) != null ? stack1 : "")
+    + "</div>\n";
+},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=container.lambda, alias2=container.escapeExpression, alias3=depth0 != null ? depth0 : (container.nullContext || {});
+
+  return "<div class=\"graphic-inner component-inner\" role=\"region\" aria-label=\""
+    + alias2(alias1(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0._globals : depth0)) != null ? stack1._components : stack1)) != null ? stack1._graphic : stack1)) != null ? stack1.ariaRegion : stack1), depth0))
+    + "\">\n"
+    + ((stack1 = container.invokePartial(partials.component,depth0,{"name":"component","data":data,"indent":"    ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + "    <div class=\"graphic-widget component-widget"
+    + ((stack1 = helpers["if"].call(alias3,((stack1 = (depth0 != null ? depth0._graphic : depth0)) != null ? stack1.attribution : stack1),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "\">\n      <img src=\""
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0._graphic : depth0)) != null ? stack1.src : stack1), depth0))
+    + "\" data-large=\""
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0._graphic : depth0)) != null ? stack1.large : stack1), depth0))
+    + "\" data-small=\""
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0._graphic : depth0)) != null ? stack1.small : stack1), depth0))
+    + "\""
+    + ((stack1 = helpers["if"].call(alias3,((stack1 = (depth0 != null ? depth0._graphic : depth0)) != null ? stack1.alt : stack1),{"name":"if","hash":{},"fn":container.program(3, data, 0),"inverse":container.program(5, data, 0),"data":data})) != null ? stack1 : "")
+    + "/>\n    </div>\n"
+    + ((stack1 = helpers["if"].call(alias3,((stack1 = (depth0 != null ? depth0._graphic : depth0)) != null ? stack1.attribution : stack1),{"name":"if","hash":{},"fn":container.program(7, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "</div>\n";
 },"usePartial":true,"useData":true});
 
 this["Handlebars"]["templates"]["notes"] = Handlebars.template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "<div data-notes-bar class=\"adaptNotesCommandBar\">\n    <a data-note-new class=\"button\" title=\"New Note\">\n        <img src=\"assets/new.svg\" />\n    </a>\n    <a data-note-to-document class=\"button\" download=\"Course-Notes.html\"\n       data-href=\"data:text/html;charset=utf-8,@content\" title=\"Export as Document\">\n        <img src=\"assets/reading.svg\" />\n    </a>\n    <a data-note-export class=\"button\" download=\"Course-Notes.notes\"\n       data-href=\"data:text/txt;charset=utf-8,@content\" title=\"Backup\">\n        <img src=\"assets/download.svg\" />\n    </a>\n\n    <label data-note-import for=\"file-upload\" class=\"button\" title=\"Import Backup\">\n        <img src=\"assets/upload.svg\" />\n    </label>\n    <input id=\"file-upload\" type=\"file\" accept=\".notes\"/>\n\n\n    <input data-note-search type=\"search\" placeholder=\"Search... (type+enter)\" />\n\n    <p data-notes-note>\n        Notes are stored in your browser cache.<br/><br/>\n        Please make sure to backup the notes to\n        your device (click \"Backup\" button),\n        before cleaning the cache.</p>\n</div>\n\n\n<div data-notes-list class=\"notes-inner\" role=\"complementary\">\n    <div class=\"aria-label a11y-ignore-focus prevent-default\" tabindex=\"0\"></div>\n</div>\n\n\n<div data-note-template class=\"notes-item-container\" data-note-index>\n    <div class=\"notes-item drawer-item\">\n        <button class=\"base notes-item-open drawer-item-open\" tabindex=\"0\" role=\"button\">\n            <div class=\"drawer-item-title\">\n                <div data-note-title class=\"drawer-item-title-inner h5\">TEMPLATE</div>\n            </div>\n            <div class=\"drawer-item-description\">\n                <div data-note-text class=\"drawer-item-description-inner\"></div>\n            </div>\n        </button>\n    </div>\n</div>\n\n\n<div data-note-editor class=\"drawer-item-open\">\n    <form>\n        <div class=\"adaptNoteCommandBar\">\n            <a data-note-save class=\"button\" title=\"Save\">\n                <img src=\"assets/save.svg\" />\n            </a>\n            <a data-note-delete class=\"button\" title=\"Delete\">\n                <img src=\"assets/delete.svg\" />\n            </a>\n            <a data-note-cancel class=\"button\" title=\"Cancel\">\n                <img src=\"assets/back.svg\" />\n            </a>\n        </div>\n\n        <div class=\"adaptNotesFormItem\">\n            <label>Title (*)</label>\n            <input type=\"text\" data-note-title required placeholder=\"Required\">\n        </div>\n\n        <div class=\"adaptNotesFormItem\">\n            <label>Text (*)</label>\n            <textarea  data-note-text required placeholder=\"Required\"></textarea>\n        </div>\n    </form>\n</div>\n";
+    return "<div data-notes-bar class=\"adaptNotesCommandBar\">\n    <a data-note-new class=\"button\" title=\"New Note\">\n        <img src=\"assets/new.svg\" />\n    </a>\n    <a data-note-to-document class=\"button\" title=\"Export as Document\">\n        <img src=\"assets/reading.svg\" />\n    </a>\n    <a data-note-export class=\"button\" download=\"Course-Notes.notes\"\n       data-href=\"data:text/txt;charset=utf-8,@content\" title=\"Backup\">\n        <img src=\"assets/download.svg\" />\n    </a>\n\n    <label data-note-import for=\"file-upload\" class=\"button\" title=\"Import Backup\">\n        <img src=\"assets/upload.svg\" />\n    </label>\n    <input id=\"file-upload\" type=\"file\" accept=\".notes\"/>\n\n\n    <input data-note-search type=\"search\" placeholder=\"Search... (type+enter)\" />\n\n    <p data-notes-note>\n        Notes are stored in your browser cache.<br/><br/>\n        Please make sure to backup the notes to\n        your device (click \"Backup\" button),\n        before cleaning the cache.</p>\n</div>\n\n\n<div data-notes-list class=\"notes-inner\" role=\"complementary\">\n    <div class=\"aria-label a11y-ignore-focus prevent-default\" tabindex=\"0\"></div>\n</div>\n\n\n<div data-note-template class=\"notes-item-container\" data-note-index>\n    <div class=\"notes-item drawer-item\">\n        <button class=\"base notes-item-open drawer-item-open\" tabindex=\"0\" role=\"button\">\n            <div class=\"drawer-item-title\">\n                <div data-note-title class=\"drawer-item-title-inner h5\">TEMPLATE</div>\n            </div>\n            <div class=\"drawer-item-description\">\n                <div data-note-text class=\"drawer-item-description-inner\"></div>\n            </div>\n        </button>\n    </div>\n</div>\n\n\n<div data-note-editor class=\"drawer-item-open\">\n    <form>\n        <div class=\"adaptNoteCommandBar\">\n            <a data-note-save class=\"button\" title=\"Save\">\n                <img src=\"assets/save.svg\" />\n            </a>\n            <a data-note-delete class=\"button\" title=\"Delete\">\n                <img src=\"assets/delete.svg\" />\n            </a>\n            <a data-note-cancel class=\"button\" title=\"Cancel\">\n                <img src=\"assets/back.svg\" />\n            </a>\n        </div>\n\n        <div class=\"adaptNotesFormItem\">\n            <label>Title (*)</label>\n            <input type=\"text\" data-note-title required placeholder=\"Required\">\n        </div>\n\n        <div class=\"adaptNotesFormItem\">\n            <label>Text (*)</label>\n            <textarea  data-note-text required placeholder=\"Required\"></textarea>\n        </div>\n    </form>\n</div>\n";
 },"useData":true});
 
 this["Handlebars"]["templates"]["boxmenu-item"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
@@ -489,38 +497,6 @@ this["Handlebars"]["templates"]["boxmenu"] = Handlebars.template({"1":function(c
     + "			</div>\n		</div>\n	</div>\n	<div class=\"aria-label relative a11y-ignore-focus prevent-default\" tabindex=\"0\" role=\"region\">"
     + alias2(alias1(((stack1 = ((stack1 = ((stack1 = (depth0 != null ? depth0._globals : depth0)) != null ? stack1._menu : stack1)) != null ? stack1._boxmenu : stack1)) != null ? stack1.menuEnd : stack1), depth0))
     + "</div>\n</div>\n";
-},"useData":true});
-
-this["Handlebars"]["templates"]["article"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
-    var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function";
-
-  return "    <div class=\"article-header\">\n        <div class=\"article-title\" data-title=\""
-    + ((stack1 = ((helper = (helper = helpers.displayTitle || (depth0 != null ? depth0.displayTitle : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"displayTitle","hash":{},"data":data}) : helper))) != null ? stack1 : "")
-    + "\">\n            <div role=\"heading\" tabindex=\"0\" class=\"article-title-inner h2\"  aria-level=\"2\">\n                "
-    + ((stack1 = ((helper = (helper = helpers.displayTitle || (depth0 != null ? depth0.displayTitle : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"displayTitle","hash":{},"data":data}) : helper))) != null ? stack1 : "")
-    + " (EE)\n            </div>\n        </div>\n\n"
-    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.body : depth0),{"name":"if","hash":{},"fn":container.program(2, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "\n"
-    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.instruction : depth0),{"name":"if","hash":{},"fn":container.program(4, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "    </div>\n";
-},"2":function(container,depth0,helpers,partials,data) {
-    var stack1;
-
-  return "        <div class=\"article-body\">\n            <div class=\"article-body-inner\">\n                "
-    + ((stack1 = (helpers.a11y_text || (depth0 && depth0.a11y_text) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.body : depth0),{"name":"a11y_text","hash":{},"data":data})) != null ? stack1 : "")
-    + "\n            </div>\n        </div>\n";
-},"4":function(container,depth0,helpers,partials,data) {
-    var stack1;
-
-  return "        <div class=\"article-instruction\">\n            <div class=\"article-instruction-inner\">\n                "
-    + ((stack1 = (helpers.a11y_text || (depth0 && depth0.a11y_text) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.instruction : depth0),{"name":"a11y_text","hash":{},"data":data})) != null ? stack1 : "")
-    + "\n            </div>\n        </div>\n";
-},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    var stack1;
-
-  return "<div class=\"article-inner block-container\">\n"
-    + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.displayTitle : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "</div>\n";
 },"useData":true});
 
 return this["Handlebars"];

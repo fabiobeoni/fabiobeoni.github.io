@@ -1,7 +1,7 @@
 [
   {
-    "title": ".",
-    "displayTitle": ".",
+    "title": "Long Term Debt Coverage Ratio",
+    "displayTitle": "Long Term Debt Coverage Ratio",
     "body": "",
     "_classes": "",
     "_trackingId": 1,
@@ -10,18 +10,21 @@
     "_isAvailable": true,
     "_isHidden": false,
     "_isVisible": true,
-    "_id": "5bd98e879a754a30918147ed",
-    "_parentId": "5bd98e879a754a30918147ec",
+    "_id": "5bdb0d19f01579697c05e0cd",
+    "_parentId": "5bdb0d19f01579697c05e0cc",
     "_type": "block",
     "_onScreen": {
       "_isEnabled": false,
       "_classes": "",
       "_percentInviewVertical": 50
+    },
+    "adapt-theme-community": {
+      "_class": "none"
     }
   },
   {
-    "title": ".",
-    "displayTitle": ".",
+    "title": "Excess Cash Margin",
+    "displayTitle": "Excess Cash Margin",
     "body": "",
     "_classes": "",
     "_trackingId": 2,
@@ -30,133 +33,16 @@
     "_isAvailable": true,
     "_isHidden": false,
     "_isVisible": true,
-    "_id": "5bd98e879a754a30918147ee",
-    "_parentId": "5bd98e879a754a30918147ec",
+    "_id": "5bdc611080f6db17420779e7",
+    "_parentId": "5bdb0d19f01579697c05e0cc",
     "_type": "block",
     "_onScreen": {
       "_isEnabled": false,
       "_classes": "",
       "_percentInviewVertical": 50
-    }
-  },
-  {
-    "title": ".",
-    "displayTitle": ".",
-    "body": "",
-    "_classes": "",
-    "_trackingId": 3,
-    "instruction": "",
-    "_isOptional": false,
-    "_isAvailable": true,
-    "_isHidden": false,
-    "_isVisible": true,
-    "_id": "5bd98ea99a754a30918147f2",
-    "_parentId": "5bd98e879a754a30918147ec",
-    "_type": "block",
-    "_onScreen": {
-      "_isEnabled": false,
-      "_classes": "",
-      "_percentInviewVertical": 50
-    }
-  },
-  {
-    "title": ".",
-    "displayTitle": ".",
-    "body": "",
-    "_classes": "",
-    "_trackingId": 4,
-    "instruction": "",
-    "_isOptional": false,
-    "_isAvailable": true,
-    "_isHidden": false,
-    "_isVisible": true,
-    "_id": "5bd99e8f9a754a30918147f5",
-    "_parentId": "5bd98e879a754a30918147ec",
-    "_type": "block",
-    "_onScreen": {
-      "_isEnabled": false,
-      "_classes": "",
-      "_percentInviewVertical": 50
-    }
-  },
-  {
-    "title": ".",
-    "displayTitle": ".",
-    "body": "",
-    "_classes": "",
-    "_trackingId": 5,
-    "instruction": "",
-    "_isOptional": false,
-    "_isAvailable": true,
-    "_isHidden": false,
-    "_isVisible": true,
-    "_id": "5bd99eda9a754a30918147f8",
-    "_parentId": "5bd98e879a754a30918147ec",
-    "_type": "block",
-    "_onScreen": {
-      "_isEnabled": false,
-      "_classes": "",
-      "_percentInviewVertical": 50
-    }
-  },
-  {
-    "title": ".",
-    "displayTitle": ".",
-    "body": "",
-    "_classes": "",
-    "_trackingId": 6,
-    "instruction": "",
-    "_isOptional": false,
-    "_isAvailable": true,
-    "_isHidden": false,
-    "_isVisible": true,
-    "_id": "5bd99f0b9a754a30918147fb",
-    "_parentId": "5bd98e879a754a30918147ec",
-    "_type": "block",
-    "_onScreen": {
-      "_isEnabled": false,
-      "_classes": "",
-      "_percentInviewVertical": 50
-    }
-  },
-  {
-    "title": ".",
-    "displayTitle": ".",
-    "body": "",
-    "_classes": "",
-    "_trackingId": 7,
-    "instruction": "",
-    "_isOptional": false,
-    "_isAvailable": true,
-    "_isHidden": false,
-    "_isVisible": true,
-    "_id": "5bd99f379a754a30918147fe",
-    "_parentId": "5bd98e879a754a30918147ec",
-    "_type": "block",
-    "_onScreen": {
-      "_isEnabled": false,
-      "_classes": "",
-      "_percentInviewVertical": 50
-    }
-  },
-  {
-    "title": ".",
-    "displayTitle": ".",
-    "body": "",
-    "_classes": "",
-    "_trackingId": 8,
-    "instruction": "",
-    "_isOptional": false,
-    "_isAvailable": true,
-    "_isHidden": false,
-    "_isVisible": true,
-    "_id": "5bd99f3f9a754a3091814801",
-    "_parentId": "5bd98e879a754a30918147ec",
-    "_type": "block",
-    "_onScreen": {
-      "_isEnabled": false,
-      "_classes": "",
-      "_percentInviewVertical": 50
+    },
+    "adapt-theme-community": {
+      "_class": "none"
     }
   }
 ]
